@@ -1,0 +1,26 @@
+\documentclass[letterpaper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{comment}
+\usepackage{amsmath}  % Matrices
+\usepackage{amsfonts} % Matrices
+\usepackage{booktabs} % Tablas
+
+\title{Tarea \#2}
+\author{Esteban Avendaño Forero}
+\date{30 de agosto}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\maketitle
+
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item Instale R y a partir del manual de introducción conteste:
+\begin{enumerate}
+\item[2.1] A
+\end{enumerate}
+\end{enumerate}
+
+
+\end{document}
+
