@@ -1,0 +1,15 @@
+\documentclass{article}
+\title{Ejemplo}
+\author{Esteban Avendaño Forero´}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\maketitle
+
+<<>>=
+
+1+2
+@
+
+
+\end{document}
