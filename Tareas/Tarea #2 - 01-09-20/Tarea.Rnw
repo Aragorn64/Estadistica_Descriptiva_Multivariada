@@ -17,7 +17,7 @@
 \setcounter{enumi}{1}
 \item Instale R y a partir del manual de introducción conteste:
 \begin{enumerate}
-\item[2.1] A
+\item[2.1] Herco
 \end{enumerate}
 \end{enumerate}
 
