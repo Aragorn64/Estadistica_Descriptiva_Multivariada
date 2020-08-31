@@ -26,12 +26,12 @@ Si, R si diferencia entre las mayusculas y las minusculas. Por ejemplo, la
 variable a es diferente a la variable A.
 \item[2.2] ¿Con qué se separan las instrucciones de R?\\
 Si uno va a relizar varias instrucciones seguidas en R, se debe separar cada 
-instruccion con un ; entre ellas.
+instruccion con un punto y coma (;) entre ellas.
 \item[2.3] ¿Cómo se escriben comentarios en R?\\
 Los comentarios en R se pueden escribir con el simbolo \# antes del comentario.
 \item[2.4] ¿Qué significa cuando aparece + luego de teclear Enter?\\
 Cuando aparece el simbolo + luego de teclear enter, significa que el programa 
-esta esperando algun otro comando.
+esta esperando algun otro comando para terminar de ejecutar la orden dada.
 \item[2.5] ¿Cómo se recuerdan comandos tecleados previamente en R?\\
 Para recordar los comandos previamente utilizados en R, se debe utilizar la 
 flecha hacia arriba y automaticamente aparecerean los comandos utilizados 
@@ -57,7 +57,10 @@ OR: |, AND: \&, Negacion: !.
 \item[2.12] ¿Cuáles son los principales objetos de R?\\
 Los principales objetos en R son vectores, matrices, listas, funciones, 
 dataframes.
-\item[2.13] ¿Cómo se define un escalar en R?
+\item[2.13] ¿Cómo se define un escalar en R?\\
+Para definir un escalar en R, hay que definirlo y declararlo dentro de una 
+variable. Por ejemplo, para definir el escalar 5 con la letra a, debemos 
+definirlo con el signo igual (a=5) o con una flecha (a <- 5).
 \item[2.14] ¿Qué es un factor y qué atributos tiene?\\
 Un factor es un objeto de R que se utiliza para categorizar los datos y 
 almacenarlos en diferentes niveles. Se pueden almacenar tanto caracteres como 
@@ -165,7 +168,7 @@ Levels: 1 2 3
 
 \item[4.9] expand.grid(a=c(60,80), p=c(100, 300),\\
 sexo=c("Macho", "Hembra"))-> trat\\
-dim(trat);class(trat)
+trat;dim(trat);class(trat)
 
 \begin{Schunk}
 \begin{Soutput}
