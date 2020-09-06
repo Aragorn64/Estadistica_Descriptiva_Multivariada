@@ -60,9 +60,8 @@ compañia.
 se utilizan para compañia.
 \item Hay catorce razas utilizadas para compañía.\\
 \textbf{FALSO} - Hay 10 razas utilizadas para compañia.
-<<echo=FALSE>>=
-q <- table(DogBreeds[,7])
-q
+<<>>=
+table(DogBreeds$FUNC)
 @
 \item Hay catorce razas de afectividad alta.\\
 \textbf{VERDADERO}
@@ -70,7 +69,7 @@ q
 table(DogBreeds$AFFE)
 @
 \item En las razas utilizadas para compañía hay catorce de afectividad alta.\\
-\textbf{FALSO}
+\textbf{FALSO} - Hay 10.
 <<>>=
 table(DogBreeds$AFFE, DogBreeds$FUNC)
 @

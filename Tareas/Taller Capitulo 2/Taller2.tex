@@ -113,6 +113,9 @@ se utilizan para compañia.
 \item Hay catorce razas utilizadas para compañía.\\
 \textbf{FALSO} - Hay 10 razas utilizadas para compañia.
 \begin{Schunk}
+\begin{Sinput}
+> table(DogBreeds$FUNC)
+\end{Sinput}
 \begin{Soutput}
 com hun uti 
  10   9   8 
@@ -130,7 +133,7 @@ hig low
 \end{Soutput}
 \end{Schunk}
 \item En las razas utilizadas para compañía hay catorce de afectividad alta.\\
-\textbf{FALSO}
+\textbf{FALSO} - Hay 10.
 \begin{Schunk}
 \begin{Sinput}
 > table(DogBreeds$AFFE, DogBreeds$FUNC)
