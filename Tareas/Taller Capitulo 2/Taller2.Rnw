@@ -21,9 +21,20 @@ Sebastian Aristizabal.}
 
 \maketitle
 
+<<include=FALSE>>=
+#install.packages("FactoClass")
+library(FactoClass)
+data(DogBreeds)
+a <- DogBreeds[,-7]
+b <- DogBreeds[,7]
+chisq.carac(df=a, cl=b, thr=0)
+cluster.carac(a, b, "ca", 2.0)
+@
+
 \begin{enumerate}
 \item Las tres variables que más caracterizan a la función para la cual se
 utilizan las razas son:
+
 \item La estadística $\chi$ asociada a la tabla de contingencia peso × funcion
 es:
 \item Para encontrar el valor p se utiliza la distribución: con grados de libertad.
