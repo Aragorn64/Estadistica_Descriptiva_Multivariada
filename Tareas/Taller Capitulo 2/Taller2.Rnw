@@ -33,8 +33,10 @@ chisq.carac(df=a, cl=b, thr=0)
 <<>>=
 cluster.carac(a, b, "ca", 2.0)
 @
+
 \newpage 
 \begin{enumerate}
+
 \item Las tres variables que más caracterizan a la función para la cual se
 utilizan las razas son: 
 \begin{inparaenum}[1)]
@@ -49,16 +51,27 @@ es:
 \item El valor test se puede obtener con el comando de R:
 Conteste falso o verdadero a las afirmaciones siguientes:
 \item De las razas utilizadas para compañía el 71.4 \% es de afectividad
-alta.
-\item Todas las razas utilizadas para compañía son de afectividad alta.
-\item Todas las razas de afectiividad alta se utilizan para compañía.
-\item Hay catorce razas utilizadas para compañía.
-\item Hay catorce razas de afectividad alta.
-\item En las razas utilizadas para compañía hay catorce de afectividad alta.
-\item Todas las razas pesadas son de utilidad.
-\item Todas las razas de utilidad son de tamaño grande.
+alta.\\
+FALSO - El 71.4 \% de las razas de afectividad alta son utilizadas para 
+compañia.
+\item Todas las razas utilizadas para compañía son de afectividad alta.\\
+VERDADERO - De las tablas, se evidencia que Cat/Class=100.
+\item Todas las razas de afectiividad alta se utilizan para compañía.\\
+FALSO - De las tablas se concluye que el 71.4 \% de las razas de afectividad alta
+se utilizan para compañia.
+\item Hay catorce razas utilizadas para compañía.\\
+FALSO - Hay 10 razas utilizadas para compañia.
+\item Hay catorce razas de afectividad alta.\\
+VERDADERO
+\item En las razas utilizadas para compañía hay catorce de afectividad alta.\\
+FALSO
+\item Todas las razas pesadas son de utilidad.\\
+VERDADERO - Al observar la tabla se evicencia que Class/Cat=100.
+\item Todas las razas de utilidad son de tamaño grande.\\
+VERDADERO - Al observar la tabla se evicencia que Cat/Class=100.
 \item La velocidad no caracteriza a las razas de caza.
-\item Hay cinco razas de utilidad.
+\item Hay cinco razas de utilidad.\\
+FALSO - Hay 8 razas de utilidad.
 \end{enumerate}
 
 \end{document}
