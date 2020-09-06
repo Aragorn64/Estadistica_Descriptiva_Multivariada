@@ -71,6 +71,9 @@ table(DogBreeds$AFFE)
 @
 \item En las razas utilizadas para compañía hay catorce de afectividad alta.\\
 \textbf{FALSO}
+<<>>=
+table(DogBreeds$AFFE, DogBreeds$FUNC)
+@
 \item Todas las razas pesadas son de utilidad.\\
 \textbf{VERDADERO} - Al observar la tabla se evicencia que Class/Cat=100.
 \item Todas las razas de utilidad son de tamaño grande.\\

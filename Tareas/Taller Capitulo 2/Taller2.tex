@@ -131,6 +131,16 @@ hig low
 \end{Schunk}
 \item En las razas utilizadas para compañía hay catorce de afectividad alta.\\
 \textbf{FALSO}
+\begin{Schunk}
+\begin{Sinput}
+> table(DogBreeds$AFFE, DogBreeds$FUNC)
+\end{Sinput}
+\begin{Soutput}
+      com hun uti
+  hig  10   2   2
+  low   0   7   6
+\end{Soutput}
+\end{Schunk}
 \item Todas las razas pesadas son de utilidad.\\
 \textbf{VERDADERO} - Al observar la tabla se evicencia que Class/Cat=100.
 \item Todas las razas de utilidad son de tamaño grande.\\
