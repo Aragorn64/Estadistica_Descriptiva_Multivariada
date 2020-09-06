@@ -4,10 +4,10 @@
 \usepackage{amsmath}  % Matrices
 \usepackage{amsfonts} % Matrices
 \usepackage{booktabs} % Tablas
+\usepackage{paralist} % Enumeracion Horizontal
                                                                                 
-\title{2.5 Taller: caracterización de la función de razas de perros}
-\author{Esteban Avendaño Forero,\\
-Juan David Sarmiento,\\
+\title{Caracterización de la función de razas de perros}
+\author{Esteban Avendaño Forero, Juan David Sarmiento\\
 Sebastian Aristizabal.}
 \date{\today}
 
@@ -28,12 +28,20 @@ data(DogBreeds)
 a <- DogBreeds[,-7]
 b <- DogBreeds[,7]
 chisq.carac(df=a, cl=b, thr=0)
+@
+\newpage 
+<<>>=
 cluster.carac(a, b, "ca", 2.0)
 @
-
+\newpage 
 \begin{enumerate}
 \item Las tres variables que más caracterizan a la función para la cual se
-utilizan las razas son:
+utilizan las razas son: 
+\begin{inparaenum}[1)]
+\item El peso, 
+\item la afectividad y 
+\item el tamaño.
+\end{inparaenum}
 
 \item La estadística $\chi$ asociada a la tabla de contingencia peso × funcion
 es:
