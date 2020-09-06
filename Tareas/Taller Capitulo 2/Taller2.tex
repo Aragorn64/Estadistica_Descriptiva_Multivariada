@@ -102,17 +102,16 @@ es:
 \item Para encontrar el valor p se utiliza la distribución: con grados de libertad.
 \item El valor test se puede obtener con el comando de R:
 Conteste falso o verdadero a las afirmaciones siguientes:
-\item De las razas utilizadas para compañía el 71.4 \% es de afectividad
-alta.\\
-FALSO - El 71.4 \% de las razas de afectividad alta son utilizadas para 
+\item De las razas utilizadas para compañía el 71.4 \% es de afectividad alta.\\
+\textbf{FALSO} - El 71.4 \% de las razas de afectividad alta son utilizadas para 
 compañia.
 \item Todas las razas utilizadas para compañía son de afectividad alta.\\
-VERDADERO - De las tablas, se evidencia que Cat/Class=100.
+\textbf{VERDADERO} - De las tablas, se evidencia que Cat/Class=100.
 \item Todas las razas de afectiividad alta se utilizan para compañía.\\
-FALSO - De las tablas se concluye que el 71.4 \% de las razas de afectividad alta
+\textbf{FALSO} - De las tablas se concluye que el 71.4 \% de las razas de afectividad alta
 se utilizan para compañia.
 \item Hay catorce razas utilizadas para compañía.\\
-FALSO - Hay 10 razas utilizadas para compañia.
+\textbf{FALSO} - Hay 10 razas utilizadas para compañia.
 \begin{Schunk}
 \begin{Soutput}
 com hun uti 
@@ -120,16 +119,26 @@ com hun uti
 \end{Soutput}
 \end{Schunk}
 \item Hay catorce razas de afectividad alta.\\
-VERDADERO
+\textbf{VERDADERO}
+\begin{Schunk}
+\begin{Sinput}
+> table(DogBreeds$AFFE)
+\end{Sinput}
+\begin{Soutput}
+hig low 
+ 14  13 
+\end{Soutput}
+\end{Schunk}
 \item En las razas utilizadas para compañía hay catorce de afectividad alta.\\
-FALSO
+\textbf{FALSO}
 \item Todas las razas pesadas son de utilidad.\\
-VERDADERO - Al observar la tabla se evicencia que Class/Cat=100.
+\textbf{VERDADERO} - Al observar la tabla se evicencia que Class/Cat=100.
 \item Todas las razas de utilidad son de tamaño grande.\\
-VERDADERO - Al observar la tabla se evicencia que Cat/Class=100.
-\item La velocidad no caracteriza a las razas de caza.
+\textbf{VERDADERO} - Al observar la tabla se evicencia que Cat/Class=100.
+\item La velocidad no caracteriza a las razas de caza.\\
+\textbf{VERDADERO} - 
 \item Hay cinco razas de utilidad.\\
-FALSO - Hay 8 razas de utilidad.
+\textbf{FALSO} - Hay 8 razas de utilidad.
 \begin{Schunk}
 \begin{Soutput}
 com hun uti 
