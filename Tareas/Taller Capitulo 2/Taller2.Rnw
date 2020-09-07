@@ -52,9 +52,9 @@ es: 24.407
 library(FactoClass)
 data(DogBreeds)
 attach(DogBreeds)
-weig<-table(FUNC,WEIG)
+weig<-table(FUNC, WEIG)
 weig
-chisq.test(weig)
+chisq.test(weig, correct = TRUE)
 detach(DogBreeds)
 @
 \item Para encontrar el valor p se utiliza la distribución: $\chi^2$ con (2-1)$\cdot$(3-1)= 2 grados de libertad.

@@ -105,7 +105,7 @@ es: 24.407
 > library(FactoClass)
 > data(DogBreeds)
 > attach(DogBreeds)
-> weig<-table(FUNC,WEIG)
+> weig<-table(FUNC, WEIG)
 > weig
 \end{Sinput}
 \begin{Soutput}
@@ -116,7 +116,7 @@ FUNC  hea lig med
   uti   5   0   3
 \end{Soutput}
 \begin{Sinput}
-> chisq.test(weig)
+> chisq.test(weig, correct = TRUE)
 \end{Sinput}
 \begin{Soutput}
 	Pearson's Chi-squared test
