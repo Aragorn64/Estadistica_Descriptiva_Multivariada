@@ -105,15 +105,15 @@ es: 24.407
 > library(FactoClass)
 > data(DogBreeds)
 > attach(DogBreeds)
-> weig<-table(FUNC, WEIG)
+> weig<-table(WEIG, FUNC)
 > weig
 \end{Sinput}
 \begin{Soutput}
-     WEIG
-FUNC  hea lig med
-  com   0   7   3
-  hun   0   1   8
-  uti   5   0   3
+     FUNC
+WEIG  com hun uti
+  hea   0   0   5
+  lig   7   1   0
+  med   3   8   3
 \end{Soutput}
 \begin{Sinput}
 > chisq.test(weig, correct = TRUE)
