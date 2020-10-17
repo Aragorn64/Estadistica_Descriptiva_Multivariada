@@ -56,14 +56,51 @@ preguntas.
         \item Realice el ACP normado y justifique por qué es el que conviene 
         para los objetivos de este taller.
         
+        A continuacion, realizamos el ACP normado con los datos del paquete
+        Whisky de FactoClass.
+        
+<<echo=true>>=
+library(FactoClass)
+data(Whisky)
+names(Whisky)
+Y <- Whisky[ ,c(1,2,4,5)]
+names(Y)
+acp <- dudi.pca(Y, scannf = FALSE , nf =3)
+acp
+barplot(acp$eig)
+valp <- t(inertia(acp)$tot.inertia)
+valp
+@
         \item ¿Cuántos ejes retiene para el análisis? ¿Por qué?
         
+        De acuerdo al analisis realizado, decidimos retener 3 ejes para el
+        analisis. Esta decision la tomamos al observar la forma del barplot de
+        los valores propios; aqui podemos ver que hay una valor mayor que dos,
+        mientras que los dos siguientes son muy parecidos entre si, mientras que
+        el ultimo valor es muy pequeño.\\
+      
         \item ¿Cuál es la variable que más contribuye al primer eje? ¿Cuál 
         es la que menos? (indique los porcentajes).
         
         \item Según el círculo de correlaciones, ¿cuáles son las variables 
         más correlacionadas? ¿Cuánto es el valor de la correlación? ¿Sí 
         corresponden a lo que se observa en la matriz de correlaciones?
+        
+<<>>=
+round(cor(Y), 3)
+s.corcircle (acp$co)
+Tipo <- cor(as.numeric(Whisky$type), acp$li)
+rownames (Tipo) <- "tipo"
+Tipo
+s.arrow(Tipo, add.plot=TRUE, boxes=FALSE)
+@
+        Segun el circulo de correlaciones, las variables mas correlacionadas entre
+        si son la variable "malt" (Malta) y "price" (Precio). El valor de la
+        correlacion es de 0.657. De acuerdo a la matriz de correlaciones, estas
+        si corresponden a lo observado en la grafica ya que entre mas correlacionadas
+        esten las variables, mas juntas estan las flechas, mientras que por otro 
+        lado, entre menos se correlaciones mas separadas estan las flechas que
+        representan a las variables.
         
         \item ¿Cuál es la variable mejor representada en el primer plano 
         factorial? ¿Cuál la peor? (Escriba los porcentajes).
